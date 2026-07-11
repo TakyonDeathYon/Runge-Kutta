@@ -1,4 +1,5 @@
-# Runge-Kutta ODE Solver
+# Num-Solver
 
-This is a simple library for the implimentation of the 4th order Runge-Kutta
-solver for ODEs.
+Num Solver is a collection of numerical methods for solving
+different maths problems. These are mainly things that I have
+done in my university classes.
