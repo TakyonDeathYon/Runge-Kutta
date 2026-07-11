@@ -44,7 +44,7 @@ def minorMat(A, row, column):
     """
     Returns the row,column-minor of a matrix A
     """
-    if not isinstance(A, np.ndarray):
+    if not isinstance(A, np.ndarray) or isinstance(A, np.matrix):
         raise Exception("The given `A` parameter is not an array")
     if not isinstance(row, int) or not isinstance(column, int):
         raise Exception("The given `row` or `column` paramters were not integers~")
