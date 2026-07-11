@@ -1,5 +1,4 @@
-# /// script
-# dependencies = ["numpy", "math"]
+# /// script dependencies = ["numpy", "math"]
 # ///
 import numpy as np
 import math

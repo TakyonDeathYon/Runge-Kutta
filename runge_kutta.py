@@ -9,8 +9,10 @@ def solve(func, t, y, h):
     return y_next
 
 
-def graph(func, t, y, h, steps):
+def solve_for(func, t, y, h, steps):
     if steps == 1:
         return [[t + h, solve(func, t, y, h)]]
     y_next = solve(func, t, y, h)
-    return [[t + h, solve(func, t, y, h)]] + graph(func, t + h, y_next, h, steps - 1)
+    return [[t + h, solve(func, t, y, h)]] + solve_for(
+        func, t + h, y_next, h, steps - 1
+    )
